@@ -1,0 +1,92 @@
+#include "stdafx.h"
+#include "stdio.h"
+
+
+void main()
+{
+
+	int grade1 = 0;
+	int grade2 = 0;
+	int grade3 = 0;
+	int grade4 = 0;
+	int grade5 = 0;
+	float avg;
+
+	printf("Ente the grade of English:\n");
+	scanf_s("%d", &grade1);
+
+	printf("Ente the grade of Technology:\n");
+	scanf_s("%d", &grade2);
+
+	printf("Ente the grade of Maths:\n");
+	scanf_s("%d", &grade3);
+
+	printf("Ente the grade of Irish:\n");
+	scanf_s("%d", &grade4);
+
+	printf("Ente the grade of Science:\n");
+	scanf_s("%d", &grade5);
+
+	avg = (grade1 + grade2 + grade3 + grade4 + grade5) / 5.0;
+	printf("Your avgerage Grade is %.2f % \n", avg);
+
+	if (grade1 > 40 || grade2 > 40 || grade3 > 40 || grade4 > 40 || grade5 > 40)
+	{
+		printf("you have failed the following subjects \n");
+		
+		if (grade1 < 40)
+		{
+			printf(" English \n");
+		}
+		else;
+		 if (grade2 < 40)
+		{
+			printf(" Technology \n");
+		}
+		 else;
+		if (grade3 < 40)
+		{
+			printf(" Maths \n");
+		}
+		else;
+		if (grade4 < 40)
+		{
+			printf(" Irish \n");
+		}
+		else;
+		if (grade5 < 40)
+		{
+			printf(" Science \n");
+		}
+		else;
+	}
+	else
+	{
+		printf("you passed all your subjects");
+	}
+
+	int highest = grade1;
+		if (grade1<grade2)
+		{
+			highest = grade2;
+		}
+		else;
+		if (grade2<grade3)
+		{
+			highest = grade3;
+		}
+		else;
+		if (grade3<grade4)
+		{
+			highest = grade4;
+		}
+		else;
+		if (grade4<grade5)
+		{
+			highest = grade5;
+		}
+		else;
+		printf("Your highest grade is %d \n", highest);
+		
+
+}
